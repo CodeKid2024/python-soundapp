@@ -5,9 +5,9 @@ from scipy.io.wavfile import write
 
 #fs: frames
 fs = 88200
-#below is how long it lasts
+#below is how long it listens
 seconds = 5
-#sd.rec: this means to record
+#sd.rec: I think this means recording
 #samplerate doesn't appear to do anything, wonder what it is for
 #channels can be replaced by mapping, and another thing that I forgot
 myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
